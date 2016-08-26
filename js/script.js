@@ -66,16 +66,15 @@ $('#daily').on('click', function(){
 })
 
 $('#getWeather').on('click', function(){
-  if($('#current').hasClass('active')){
+  if($('#zip').val().length === 5){
     getCurrentWeather($('#zip').val())
       .then(function(current_weather){
         dom.addDailyToDom(current_weather)
       })
-  }
-  else if($('#three_day').hasClass('active')){
+
     getThreeDay($('#zip').val())
-      .then(function(three_day){
-        dom.addThreeToDom(three_day)
+      .then(function(data){
+        dom.addThreeToDom(data)
       })
   }
 })

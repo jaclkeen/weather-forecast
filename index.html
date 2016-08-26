@@ -11,7 +11,7 @@
 
       <div class="input_area" id="input_area">
         <input type="text" class="zip" name="zip" id="zip" placeholder="Enter zip code">
-        <input type="button" class='getWeather', id="getWeather" value="Get Weather">
+        <input type="button" class='getWeather' id="getWeather" value="Get Weather">
       </div>
 
       <div class="nav">
@@ -20,24 +20,26 @@
         <a href="#" id="daily" class="daily choice">Daily</a>
       </div>
 
-      <div class="weather_current" id="weather_current">
-        <h2 class="town" id="town"></h2>
-        <p class="description" id="description"></p>
-        <p class="temp" id="temp"></p>
-        <p class="humidity" id="humidity"></p>
-        <img class="weather_pic" id="weather_pic" src="">
-      </div>
+      <div class="main" id="main">
+        <div class="weather_current" id="weather_current">
+          <h2 class="town" id="town"></h2>
+          <p class="description" id="description"></p>
+          <p class="temp" id="temp"></p>
+          <p class="humidity" id="humidity"></p>
+          <p class="wind_speed" id="wind_speed"></p>
+          <img class="weather_pic" id="weather_pic" src="">
+        </div>
 
-      <div class="day3" id="day3"></div>
-        <div class="today_weather" id="today_weather"></div>
-        <div class="tomorrow_weather" id="tomorrow_weather"></div>
-        <div class="dayAfterWeather" id="dayAfterWeather"></div>
-      <div class="day" id="day">
-
+        <div class="day3" id="day3">
+          <div class="today_weather" id="today_weather"></div>
+          <div class="tomorrow_weather" id="tomorrow_weather"></div>
+          <div class="dayAfterWeather" id="dayAfterWeather"></div>
+        </div>
       </div>
 
     </div>
   </div>
+</body>
   <script src='/bower_components/jquery/dist/jquery.min.js'></script>
   <script src='dist/app.js'></script>
 </body>
